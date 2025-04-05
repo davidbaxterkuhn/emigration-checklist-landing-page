@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6 Month Emigration Checklist – Discussions with David</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-900 font-sans">
+    <div class="min-h-screen flex flex-col items-center justify-center px-4">
+      <div class="max-w-md w-full text-center">
+        <h1 class="text-3xl font-bold mb-4">Get the Free PDF Checklist</h1>
+        <p class="mb-6 text-gray-600">
+          Download the <strong>6 Month Emigration Preparation Checklist</strong> from <em>Discussions with David</em>. Just drop your email below and get instant access.
+        </p>
+        <form
+          onsubmit="redirectAfterSubmit(event)"
+          class="space-y-4"
+        >
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Your email"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
+          >
+            Get the PDF
+          </button>
+        </form>
+        <p class="text-sm text-gray-400 mt-6">
+          © <a href="https://www.youtube.com/@discussionswithdavid22" class="underline hover:text-gray-600">Discussions with David</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function redirectAfterSubmit(event) {
+        event.preventDefault();
+        const email = event.target.email.value;
+        // You could store email somewhere here if you want
+        window.location.href = "https://docs.google.com/document/d/1yAI8V3IznKrUdbQRwp_CqsGuAoCqlyDfNId99eohkvk/edit?usp=drive_link";
+      }
+    </script>
+  </body>
+</html>
