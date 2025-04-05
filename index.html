@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>6 Month Emigration Checklist – Discussions with David</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Hide everything except the email entry */
+      iframe {
+        border: none;
+        width: 640px;
+        height: 80px; /* Adjust height as necessary */
+      }
+
+      .google-form-wrapper {
+        overflow: hidden;
+        height: 100px; /* Show just enough to reveal the input field */
+      }
+    </style>
   </head>
   <body class="bg-white text-gray-900 font-sans">
     <div class="min-h-screen flex flex-col items-center justify-center px-4">
@@ -14,16 +27,15 @@
           Download the <strong>6 Month Emigration Preparation Checklist</strong> from <em>Discussions with David</em>. Just drop your email below and get instant access.
         </p>
 
-        <!-- Embed Google Form -->
-        <iframe 
-          src="https://docs.google.com/forms/d/e/1FAIpQLScry1fSlCgKMuNysEpQ9IufAWMGPKrjCNdSyMzVIR4JnGeUUQ/viewform" 
-          width="640" 
-          height="480" 
-          frameborder="0" 
-          marginheight="0" 
-          marginwidth="0">
-          Loading…
-        </iframe>
+        <!-- Embed Google Form with CSS to hide everything except the email field -->
+        <div class="google-form-wrapper">
+          <iframe 
+            src="https://docs.google.com/forms/d/e/14Skn34QeHeZvAZ1sC2GTd1EnbC_UCZSc-ExlgLYby9g/viewform?embedded=true" 
+            width="640" 
+            height="80">
+            Loading…
+          </iframe>
+        </div>
 
         <p class="text-sm text-gray-400 mt-6">
           © <a href="https://www.youtube.com/@discussionswithdavid22" class="underline hover:text-gray-600">Discussions with David</a>
