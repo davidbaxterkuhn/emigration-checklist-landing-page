@@ -14,7 +14,8 @@
           Download the <strong>6 Month Emigration Preparation Checklist</strong> from <em>Discussions with David</em>. Just drop your email below and get instant access.
         </p>
         <form
-          onsubmit="redirectAfterSubmit(event)"
+          action="https://formspree.io/f/xgvanjqr"
+          method="POST"
           class="space-y-4"
         >
           <input
@@ -24,6 +25,14 @@
             placeholder="Your email"
             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
+          
+          <!-- Hidden redirect to your Google Drive PDF -->
+          <input
+            type="hidden"
+            name="_redirect"
+            value="https://docs.google.com/document/d/1yAI8V3IznKrUdbQRwp_CqsGuAoCqlyDfNId99eohkvk/edit?usp=drive_link"
+          />
+
           <button
             type="submit"
             class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
@@ -36,14 +45,5 @@
         </p>
       </div>
     </div>
-
-    <script>
-      function redirectAfterSubmit(event) {
-        event.preventDefault();
-        const email = event.target.email.value;
-        // You could store email somewhere here if you want
-        window.location.href = "https://docs.google.com/document/d/1yAI8V3IznKrUdbQRwp_CqsGuAoCqlyDfNId99eohkvk/edit?usp=drive_link";
-      }
-    </script>
   </body>
 </html>
